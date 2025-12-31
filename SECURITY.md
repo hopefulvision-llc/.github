@@ -23,7 +23,7 @@ If you prefer, you may use GitHub's private security advisory feature to report 
 
 ## Supported Releases
 
-List supported versions and end‑of‑life policy here (example):
+List supported versions and end-of-life policy here (example):
 - Releases published in the last 12 months are fully supported.
 - Maintain stable-branch security backports as needed.
 
