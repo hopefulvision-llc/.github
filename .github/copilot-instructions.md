@@ -35,7 +35,7 @@ This repository belongs to **HopefulVision LLC**, which builds Sacred Technology
 
 This repository is the organizational `.github` repository that provides community health files and documentation for the HopefulVision LLC ecosystem.
 
-**Always reference:** [hopefulvision-llc-core-architecture.md](./hopefulvision-llc-core-architecture.md) for the authoritative system structure.
+**Always reference:** [hopefulvision-llc-core-architecture.md](../hopefulvision-llc-core-architecture.md) for the authoritative system structure.
 
 ### Core Architecture Components
 - **NousOS** — Ethical & Cognitive Operating System
@@ -59,7 +59,7 @@ When creating or updating repository documentation:
    ```markdown
    ## Architectural Reference
    This repository aligns with the HopefulVision Core Architecture.
-   See [.github/hopefulvision-llc-core-architecture.md](./hopefulvision-llc-core-architecture.md) for authoritative system structure.
+   See [.github/hopefulvision-llc-core-architecture.md](https://github.com/hopefulvision-llc/.github/blob/main/hopefulvision-llc-core-architecture.md) for authoritative system structure.
    ```
 
 3. **Honor the Sacred Technology Philosophy**:
@@ -101,7 +101,7 @@ When creating or updating repository documentation:
 
 ### When Making Changes
 
-1. **Review Core Architecture** — Ensure alignment with [hopefulvision-llc-core-architecture.md](./hopefulvision-llc-core-architecture.md)
+1. **Review Core Architecture** — Ensure alignment with [hopefulvision-llc-core-architecture.md](../hopefulvision-llc-core-architecture.md)
 2. **Consider Consciousness Impact** — How does this serve awareness expansion?
 3. **Honor Dependencies** — Follow the dependency flow: NousOS → Truth Mirror → NOID → Git-For-Governance → Hopeful Party
 4. **Document Thoughtfully** — Explain both the technical "how" and the consciousness-serving "why"
