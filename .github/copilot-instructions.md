@@ -59,7 +59,7 @@ When creating or updating repository documentation:
    ```markdown
    ## Architectural Reference
    This repository aligns with the HopefulVision Core Architecture.
-   See [.github/hopefulvision-llc-core-architecture.md](https://github.com/hopefulvision-llc/.github/blob/main/hopefulvision-llc-core-architecture.md) for authoritative system structure.
+   See [.github/hopefulvision-llc-core-architecture.md](./hopefulvision-llc-core-architecture.md) for authoritative system structure.
    ```
 
 3. **Honor the Sacred Technology Philosophy**:
