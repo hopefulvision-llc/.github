@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    # Skip if commit message contains [skip ci] to avoid logging the workflow's own commits
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -31,25 +33,20 @@ jobs:
         run: |
           # Get commit information
           COMMIT_SHA="${{ github.sha }}"
-          COMMIT_MESSAGE=$(git log -1 --format=%s $COMMIT_SHA | sed 's/"/\\"/g')
+          COMMIT_MESSAGE=$(git log -1 --format=%s $COMMIT_SHA)
           AUTHOR="${{ github.actor }}"
           TIMESTAMP="${{ github.event.head_commit.timestamp }}"
           REPO="${{ github.repository }}"
           
-          # Create a temporary YAML entry
-          cat > /tmp/entry.yaml << EOF
-          - sha: "$COMMIT_SHA"
-            message: "$COMMIT_MESSAGE"
-            author: "$AUTHOR"
-            timestamp: "$TIMESTAMP"
-            repository: "$REPO"
-            branch: "main"
-          EOF
-          
-          # Append to commit-log.yaml
-          yq eval-all 'select(fileIndex == 0).commits += select(fileIndex == 1) | select(fileIndex == 0)' \
-            commit-log.yaml /tmp/entry.yaml > /tmp/commit-log-updated.yaml
-          mv /tmp/commit-log-updated.yaml commit-log.yaml
+          # Use yq to safely add the new entry with proper escaping
+          yq eval ".commits += [{
+            \"sha\": \"$COMMIT_SHA\",
+            \"message\": \"$(echo "$COMMIT_MESSAGE" | sed 's/\\/\\\\/g' | sed 's/"/\\"/g')\",
+            \"author\": \"$AUTHOR\",
+            \"timestamp\": \"$TIMESTAMP\",
+            \"repository\": \"$REPO\",
+            \"branch\": \"main\"
+          }]" -i commit-log.yaml
 
       - name: Commit and push changes
         run: |
