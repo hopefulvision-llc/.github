@@ -26,7 +26,10 @@ jobs:
 
       - name: Install yq (YAML processor)
         run: |
-          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          YQ_VERSION="v4.40.5"
+          YQ_BINARY="yq_linux_amd64"
+          wget -qO /usr/local/bin/yq "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/${YQ_BINARY}"
+          echo "0d6aaf1cf44a8d18fbc7ed0ef14f735a8df8d2e314c4cc0f0242d35c0a440c95  /usr/local/bin/yq" | sha256sum -c -
           sudo chmod +x /usr/local/bin/yq
 
       - name: Append commit to commit-log.yaml
@@ -38,15 +41,30 @@ jobs:
           TIMESTAMP="${{ github.event.head_commit.timestamp }}"
           REPO="${{ github.repository }}"
           
-          # Use yq to safely add the new entry with proper escaping
-          yq eval ".commits += [{
-            \"sha\": \"$COMMIT_SHA\",
-            \"message\": \"$(echo "$COMMIT_MESSAGE" | sed 's/\\/\\\\/g' | sed 's/"/\\"/g')\",
-            \"author\": \"$AUTHOR\",
-            \"timestamp\": \"$TIMESTAMP\",
-            \"repository\": \"$REPO\",
-            \"branch\": \"main\"
-          }]" -i commit-log.yaml
+          # Create a JSON file with the new commit entry
+          cat > /tmp/new-commit.json << 'EOF'
+          {
+            "sha": "",
+            "message": "",
+            "author": "",
+            "timestamp": "",
+            "repository": "",
+            "branch": "main"
+          }
+          EOF
+          
+          # Use jq to populate the JSON with actual values (safer than shell variable expansion)
+          jq -n \
+            --arg sha "$COMMIT_SHA" \
+            --arg message "$COMMIT_MESSAGE" \
+            --arg author "$AUTHOR" \
+            --arg timestamp "$TIMESTAMP" \
+            --arg repo "$REPO" \
+            '{sha: $sha, message: $message, author: $author, timestamp: $timestamp, repository: $repo, branch: "main"}' \
+            > /tmp/new-commit.json
+          
+          # Convert JSON to YAML and append to commit-log.yaml
+          yq eval ".commits += [$(yq eval -o=json /tmp/new-commit.json)]" -i commit-log.yaml
 
       - name: Commit and push changes
         run: |
