@@ -1,0 +1,64 @@
+name: Log Commit to YAML
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  log-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Install yq (YAML processor)
+        run: |
+          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Append commit to commit-log.yaml
+        run: |
+          # Get commit information
+          COMMIT_SHA="${{ github.sha }}"
+          COMMIT_MESSAGE=$(git log -1 --format=%s $COMMIT_SHA | sed 's/"/\\"/g')
+          AUTHOR="${{ github.actor }}"
+          TIMESTAMP="${{ github.event.head_commit.timestamp }}"
+          REPO="${{ github.repository }}"
+          
+          # Create a temporary YAML entry
+          cat > /tmp/entry.yaml << EOF
+          - sha: "$COMMIT_SHA"
+            message: "$COMMIT_MESSAGE"
+            author: "$AUTHOR"
+            timestamp: "$TIMESTAMP"
+            repository: "$REPO"
+            branch: "main"
+          EOF
+          
+          # Append to commit-log.yaml
+          yq eval-all 'select(fileIndex == 0).commits += select(fileIndex == 1) | select(fileIndex == 0)' \
+            commit-log.yaml /tmp/entry.yaml > /tmp/commit-log-updated.yaml
+          mv /tmp/commit-log-updated.yaml commit-log.yaml
+
+      - name: Commit and push changes
+        run: |
+          git add commit-log.yaml
+          
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update commit log [skip ci]"
+            git push
+          fi
