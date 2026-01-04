@@ -255,6 +255,8 @@ The repositories here contain both theoretical frameworks and practical implemen
 Founded by Cosimos S. Portinari | September 2023
 | Serving Planetary Consciousness
 
+https://github.com/hopefulvision-llc/Sacred-Technology-Renaissance/tree/main/Canon
+
 hopefulvision-llc/NousObjectID-NOID/blob/main/nousos_persona_council.js
 
 -llc/TruthMirror/blob/main/README.md
