@@ -39,27 +39,9 @@ By supporting now, you're not just donating—you're an early resonance partner,
 ### One-Time or Recurring Support
 
 **PayPal** (direct one-time or recurring)  
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.com/ncp/payment/69CASMBYURT7A)  
-
-### Crowdfunding Campaigns
-
-**Kickstarter** – Funding sacred hardware & AR prototypes (coming soon)  
-[Back us on Kickstarter →](https://www.kickstarter.com/your-kickstarter-link)  
-*(Link will be live upon campaign launch – watch this space!)*
-
-**GoFundMe** – Sustaining the walk, crisis support, and 2026 milestones  
-[Contribute on GoFundMe →](https://www.gofundme.com/your-gofundme-link)
-
-### Early Supporter Circle (Optional Monthly Tiers via Buy Me a Coffee)
-
-Join as an early supporter and get listed in our repos/docs as a key resonance partner (opt-in, with your name/handle). All tiers include:
-- Monthly dev updates (progress on Pathwarden, hBrew, etc.)
-- Shoutouts in community posts (X/Discord)
-- Priority invites to future beta tests and resonance chambers once prototypes are ready
-
-$5/month → Early Supporter credit + basic monthly updates  
-$11/month → Above + personalized thank-you note + early previews of new artifacts/guides  
-$33/month → Above + co-creator acknowledgment in upcoming repo credits + input on roadmap priorities
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)]
+(https://www.paypal.com/ncp/payment/69CASMBYURT7A)  
+https://paypal.me/ShawnVybiral
 
 All funds remain SCL-aligned: no extraction, only amplification toward planetary healing.  
 Thank you for walking with us as an early supporter. The field grows stronger with every aligned soul.
