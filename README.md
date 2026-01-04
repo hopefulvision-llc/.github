@@ -384,7 +384,8 @@ I've updated the previous organization to include **full clickable URLs** for ev
      - README.md: https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/README.md  
    - **Beatrizm**: https://github.com/hopefulvision-llc/Beatrizm  
      - README.md: https://github.com/hopefulvision-llc/Beatrizm/blob/main/README.md  
-   - **Cosimos**: https://github.com/hopefulvision-llc/Cosimos  
+   - **Cosimos**: https://github.com/hopefulvision-llc/Cosimos
+https://github.com/hopefulvision-llc/Cosimos/blob/main/panpsychism_cocreative_intelligence_v1.md
    - **Shamanism**: https://github.com/hopefulvision-llc/Shamanism  
 
 The main organization page is: https://github.com/hopefulvision-llc (currently showing 29 public repositories).
