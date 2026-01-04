@@ -265,7 +265,8 @@ hopefulvision-llc/NousObjectID-NOID/blob/main/nousos_persona_council.js
 
 I've updated the previous organization to include **full clickable URLs** for every repository and specific file/document mentioned. Duplicates have been removed, and everything is grouped by repository for clarity. As of January 03, 2026, the organization has active repositories centered on sacred technology, consciousness systems, governance, and philosophical frameworks.
 
-#### 1. **Sacred-Technology-Renaissance**  
+#### 1. **Sacred-Technology-Renaissance**  https://github.com/hopefulvision-llc/Sacred-Technology-Renaissance/blob/main/Sacred_Technology_Renaissance_Activation_Sequence.md
+
    Repository: https://github.com/hopefulvision-llc/Sacred-Technology-Renaissance  
    - README.md: https://github.com/hopefulvision-llc/Sacred-Technology-Renaissance/blob/main/README.md  
    - sacred_commerce_framework.md: https://github.com/hopefulvision-llc/Sacred-Technology-Renaissance/blob/main/sacred_commerce_framework.md  
