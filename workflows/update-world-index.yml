@@ -27,6 +27,9 @@ jobs:
         with:
           python-version: "3.x"
 
+          - name: Debug environment
+  run: pip list
+
       - name: Run index generator
         run: python scripts/update_world_index.py
 
