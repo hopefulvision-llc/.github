@@ -18,25 +18,29 @@ jobs:
     steps:
       - name: Checkout .github repo
         uses: actions/checkout@v4
-
-      - name: Install Git
-        run: sudo apt-get update && sudo apt-get install -y git
+        with:
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: '3.x'
 
-          - name: Debug environment
-  run: pip list
+      - name: Debug environment
+        run: |
+          python --version
+          pip --version
+          pip list
 
       - name: Run index generator
         run: python scripts/update_world_index.py
 
       - name: Commit generated index (if changed)
-        run: |
-          git config user.name "hopefulvision-bot"
-          git config user.email "bot@hopefulvision.llc"
-          git add HopefulVision_World_Index_AUTO.md
-          git commit -m "🤖 Auto-update world index" || echo "No changes to commit"
-          git push
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "🤖 Auto-update world index"
+          add: "HopefulVision_World_Index_AUTO.md"
+          author_name: "hopefulvision-bot"
+          author_email: "bot@hopefulvision.llc"
+          push: true
