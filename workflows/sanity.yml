@@ -1,0 +1,13 @@
+name: Sanity — Actions Visible
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Actions can see this workflow 👍"
+      - name: Python version
+        run: python -V
