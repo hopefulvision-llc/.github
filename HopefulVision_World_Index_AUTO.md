@@ -8,6 +8,13 @@
 
 ---
 
+https://github.com/hopefulvision-llc/.github/blob/main/HopefulVision_World_Index_AUTO.md
+
+https://github.com/hopefulvision-llc/.github/blob/main/HopefulVision_Flow_Model.mermaid
+
+https://github.com/hopefulvision-llc/.github/blob/main/HopefulVision_Layer_Stack.mermaid
+
+---
 
 ## 📦 NousOS
 
