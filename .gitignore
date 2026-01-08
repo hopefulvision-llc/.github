@@ -1,0 +1,17 @@
+# General
+.DS_Store
+.vscode/
+.idea/
+
+# Node
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+_repo_cache/
+
+# Env
+.env
