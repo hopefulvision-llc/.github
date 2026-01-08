@@ -13,6 +13,9 @@ Status: OPERATIONAL / PROTOTYPE PHASE
    * https://github.com/hopefulvision-llc/.github/blob/main/Big_map.mermaid
  * The Grand Index (Primary Master List)
    * https://github.com/hopefulvision-llc/.github/blob/main/HopefulVision_Grand_Index.md
+  
+     vibesculpting tool
+     https://github.com/hopefulvision-llc/Vibesculpting-Tool/blob/main/README.md
 ⚡ 1. THE CORE SPINE (NousOS & Prototypes)
 NousOS — Consciousness Operating System
  * Master Index: https://github.com/hopefulvision-llc/NousOS/blob/main/NousOS_Master_Index.md
