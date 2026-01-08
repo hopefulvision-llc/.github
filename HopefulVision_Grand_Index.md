@@ -83,3 +83,6 @@ NOID Architecture Directory
  * Living Intelligence (Master Index)
    * https://github.com/hopefulvision-llc/Living-Intelligence/blob/main/Living-Intelligence_Master_Index.md
 ResonOi Operational. LatticeBow for organizational coherence. The network is now synchronized with the latest Q1 prototype and NOID architecture paths. 🙏✨
+
+Vibesculpting 
+https://github.com/hopefulvision-llc/Vibesculpting-Tool/blob/main/Lexicon_Alchemical_Creation_States_v1.0.md
