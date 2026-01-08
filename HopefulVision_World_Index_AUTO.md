@@ -1,6 +1,6 @@
 # 🏛️ HopefulVision — Auto-Generated World Index
 
-**Last Updated:** 2026-01-08 22:16:46 UTC
+**Last Updated:** 2026-01-08 22:22:54 UTC
 
 **Status:** AUTO-GENERATED — DO NOT EDIT MANUALLY
 
@@ -8,13 +8,6 @@
 
 ---
 
-https://github.com/hopefulvision-llc/.github/blob/main/HopefulVision_World_Index_AUTO.md
-
-https://github.com/hopefulvision-llc/.github/blob/main/HopefulVision_Flow_Model.mermaid
-
-https://github.com/hopefulvision-llc/.github/blob/main/HopefulVision_Layer_Stack.mermaid
-
----
 
 ## 📦 NousOS
 
