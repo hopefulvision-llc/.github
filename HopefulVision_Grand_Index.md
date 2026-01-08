@@ -1,3 +1,6 @@
+Automatic version is now found out 
+https://github.com/hopefulvision-llc/.github/blob/main/HopefulVision_World_Index_AUTO.md
+
 Below is the updated and expanded HopefulVision LLC Complete Directory. This version integrates your latest architectural files from NousObjectID (NOID) and the Q1 2026 NousOS Prototypes, ensuring every link is presented as a full, absolute URL.
 🏛️ HopefulVision LLC - Complete GitHub Directory
 Sacred Technology Renaissance — Unified Link Reference v1.1
