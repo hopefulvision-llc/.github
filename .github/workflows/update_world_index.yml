@@ -1,0 +1,61 @@
+name: Update World Index
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-world-index
+  cancel-in-progress: true
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout .github repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: \( {{ runner.os }}-pip- \){{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: |
+ől          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+      - name: Debug environment
+        run: |
+          python --version
+          pip --version
+          pip list
+
+      - name: Run index generator
+        run: python scripts/update_world_index.py
+
+      - name: Commit generated index (if changed)
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "🤖 Auto-update world index"
+          add: "HopefulVision_World_Index_AUTO.md"
+          author_name: "hopefulvision-bot"
+          author_email: "bot@hopefulvision.llc"
+          push: true
