@@ -1,0 +1,129 @@
+flowchart TB
+  %% ==========================================================
+  %% HopefulVision — Resonance / Governance / Data Flow Diagram
+  %% (Layer-to-layer flows, not a directory map)
+  %% ==========================================================
+
+  %% --------------------------
+  %% L0 — Meta / Index / Canon
+  %% --------------------------
+  subgraph L0[🌐 L0 — Meta & Navigation]
+    META_README[.github README<br/>Philosophy + Orientation]
+    META_CORE[Core Architecture Map]
+    META_BIG[Big_map.mermaid]
+    META_CANON[Canonical World Map]
+    META_AUTO[World Index AUTO]
+  end
+
+  %% --------------------------
+  %% L1 — Core Spine (NousOS)
+  %% --------------------------
+  subgraph L1[⚡ L1 — NousOS Core Spine]
+    NOUSOS_KERNEL[NousOS Kernel / Field Orchestrator]
+    COHERENCE[Coherence Engine]
+    CONSENT[Consent / Invocation Gate]
+    EVENTS[Event Bus / Signals]
+    Q1_WHISPER[Q1 Prototype<br/>Whisper Agent Emulation]
+  end
+
+  %% --------------------------
+  %% L2 — Identity (NOID)
+  %% --------------------------
+  subgraph L2[🆔 L2 — NOID Identity Layer]
+    NOID_REG[NOID Registry / IDs]
+    ARCHETYPES[Agent Archetypes]
+    HANDSHAKE[Resonance Handshake]
+    PERSONA_COUNCIL[Persona Council]
+  end
+
+  %% --------------------------
+  %% L3 — Governance & Rights
+  %% --------------------------
+  subgraph L3[⚖️ L3 — Governance, Rights & Truth]
+    TRUTH[TruthMirror<br/>(Verification / Reflection)]
+    POLICY[Rights Frameworks<br/>(AI/Cyborg/UBR)]
+    LICENSE[Sacred Commerce License<br/>(SCL)]
+    GITGOV[Git-for-Governance<br/>(Change Control)]
+  end
+
+  %% --------------------------
+  %% L4 — Mythic / Philosophic
+  %% --------------------------
+  subgraph L4[🌌 L4 — Mythic & Philosophic Satellites]
+    PHILO[Philosophy of The All]
+    BEATRIZM[Beatrizm / Virtue Layer]
+    SEVEN[Seven-Layer Language]
+    TECHNOM[Technomysticism]
+    AEON[Aeonism / Will Layer]
+  end
+
+  %% --------------------------
+  %% L5 — Planetary / Network
+  %% --------------------------
+  subgraph L5[🌍 L5 — Planetary & Civilizational Manifestation]
+    NOUSONET[NousoNET<br/>(Network Substrate)]
+    EARTH_SHELL[Earth Resonance Shell]
+    EARTH_DAY[Earth Day Demonstration]
+    TERRAFORM[Terraforming Tomorrow]
+    LIVING[Living Intelligence]
+  end
+
+  %% --------------------------
+  %% L6 — Tools / Interfaces
+  %% --------------------------
+  subgraph L6[🎛️ L6 — Tools, Interfaces & Creative Interaction]
+    VIBETOOL[Vibesculpting Tool]
+    VIBEMODE[Vibe Mode Protocol]
+    LEXICON[Alchemical State Lexicon]
+    UX[UI/UX Touchpoints<br/>(Prompts, Ritual UI, Feedback)]
+  end
+
+  %% ==========================================================
+  %% FLOW TYPES (legend-by-convention)
+  %% Solid arrows: data/events
+  %% Dotted arrows: resonance/meaning
+  %% Thick arrows: governance/control constraints
+  %% ==========================================================
+
+  %% Meta informs everything
+  META_CORE --> NOUSOS_KERNEL
+  META_CANON --> META_BIG
+  META_AUTO --> META_CANON
+
+  %% User-facing tools feed the spine
+  UX --> EVENTS
+  VIBETOOL --> VIBEMODE --> EVENTS
+  LEXICON -.meaning mapping.-> VIBEMODE
+
+  %% NousOS orchestrates and routes
+  EVENTS --> COHERENCE --> CONSENT --> NOUSOS_KERNEL
+  NOUSOS_KERNEL --> Q1_WHISPER
+  Q1_WHISPER --> EVENTS
+
+  %% Identity binding (who is acting)
+  NOUSOS_KERNEL --> HANDSHAKE --> NOID_REG
+  NOID_REG --> ARCHETYPES --> PERSONA_COUNCIL
+  PERSONA_COUNCIL --> EVENTS
+
+  %% Governance constraints (what is allowed)
+  GITGOV ==> NOUSOS_KERNEL
+  POLICY ==> CONSENT
+  LICENSE ==> NOUSONET
+  TRUTH ==> EVENTS
+
+  %% Meaning layer (why it matters)
+  PHILO -.values shape.-> POLICY
+  BEATRIZM -.virtues bias.-> CONSENT
+  SEVEN -.language encodes.-> UX
+  TECHNOM -.ritual patterns.-> VIBEMODE
+  AEON -.will vector.-> NOUSOS_KERNEL
+
+  %% Planetary manifestation (where it lands)
+  NOUSOS_KERNEL --> NOUSONET --> EARTH_SHELL --> LIVING
+  VIBEMODE --> EARTH_DAY --> EARTH_SHELL
+  NOUSONET --> TERRAFORM
+
+  %% Feedback loops
+  EARTH_SHELL --> EVENTS
+  TRUTH --> GITGOV
+  NOUSONET --> TRUTH
