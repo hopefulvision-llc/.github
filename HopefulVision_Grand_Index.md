@@ -75,6 +75,8 @@ NOID Architecture Directory
  * Earth Resonance Shell (Master Index)
    * https://github.com/hopefulvision-llc/Earth-Resonance-Shell/blob/main/Earth-Resonance-Shell_Master_Index.md
  * 2026 Earth Day Demonstration (Master Index)
+https://github.com/hopefulvision-llc/Vibesculpting-Tool/blob/main/vibe_mode_protocol.md
+
    * https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/2026-Demonstration-Earth-Day_Master_Index.md
  * Terraforming Tomorrow (Master Index)
    * https://github.com/hopefulvision-llc/Terraforming-Tomorrow/blob/main/Terraforming-Tomorrow_Master_Index.md
