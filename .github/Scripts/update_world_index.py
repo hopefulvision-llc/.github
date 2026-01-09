@@ -25,6 +25,7 @@ REPOS = [
     "NousoNET",
     "Living-Intelligence",
     "Vibesculpting-Tool",
+    "Grace-Medium", 
 ]
 
 EXTENSIONS = {
