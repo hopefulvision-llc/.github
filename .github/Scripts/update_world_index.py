@@ -1,6 +1,7 @@
 import os
 import subprocess
 import shutil
+import time
 from datetime import datetime
 
 ORG = "hopefulvision-llc"
@@ -25,7 +26,7 @@ REPOS = [
     "NousoNET",
     "Living-Intelligence",
     "Vibesculpting-Tool",
-    "Grace-Medium", 
+    "Grace-Medium",  # ← This is already correctly here!
 ]
 
 EXTENSIONS = {
@@ -44,12 +45,13 @@ def run(cmd):
     result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
     if result.returncode != 0:
         print(f"Command failed: {cmd}")
-        print(f"Error: {result.stderr.strip()}")
-        raise RuntimeError(f"Command failed: {cmd}")
-    return result.stdout
+        print(f"Error output:\n{result.stderr.strip()}")
+        raise RuntimeError(f"Command failed with code {result.returncode}: {cmd}")
+    return result.stdout.strip()
 
 def main():
     if os.path.exists(WORKDIR):
+        print(f"Cleaning up old cache directory: {WORKDIR}")
         shutil.rmtree(WORKDIR)
     os.makedirs(WORKDIR, exist_ok=True)
 
@@ -67,11 +69,14 @@ def main():
         local_path = os.path.join(WORKDIR, repo)
 
         try:
-            run(f"git clone --depth=1 {repo_url} {local_path}")
+            # Clone quietly and shallow to save time/bandwidth
+            run(f"git clone --depth=1 --quiet {repo_url} {local_path}")
+            print(f"  → Successfully cloned {repo}")
         except Exception as e:
+            error_msg = str(e)
             lines.append(f"\n## 📦 {repo} — ⚠️ FAILED TO CLONE\n")
-            lines.append(f"> Error: {str(e)}\n")
-            print(f"Failed to clone {repo}: {e}")
+            lines.append(f"> Error: {error_msg}\n")
+            print(f"Failed to clone {repo}: {error_msg}")
             continue  # Skip to next repo
 
         lines.append(f"\n## 📦 {repo}\n")
@@ -80,11 +85,11 @@ def main():
         repo_files = []
 
         for root, dirs, files in os.walk(local_path):
-            # Skip unwanted directories in-place to avoid walking them
+            # Skip unwanted directories in-place
             dirs[:] = [d for d in dirs if d not in SKIP_DIRS]
 
             for file in files:
-                if file.startswith('.'):  # Skip dotfiles if desired
+                if file.startswith('.'):  # Skip dotfiles
                     continue
                 ext = os.path.splitext(file)[1].lower()
                 if ext in EXTENSIONS:
@@ -99,12 +104,15 @@ def main():
         if repo_files:
             lines.extend(repo_files)
             file_count = len(repo_files)
-            lines.append(f"\n> Indexed {file_count} files.\n")
+            lines.append(f"\n> Indexed **{file_count}** files.\n")
             total_files += file_count
         else:
-            lines.append("> No matching files found.\n")
+            lines.append("> No matching files found in this repository.\n")
 
-    lines.insert(3, f"**Total Files Indexed:** {total_files}\n")  # Add summary near top
+        # Small delay to be polite to GitHub API
+        time.sleep(1.5)
+
+    lines.insert(3, f"**Total Files Indexed:** {total_files}\n")
 
     output = "\n".join(lines)
 
@@ -112,7 +120,10 @@ def main():
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(output)
 
-    print(f"World index regenerated successfully: {total_files} files across {len(REPOS)} repos.")
+    print(f"\nWorld index regenerated successfully!")
+    print(f"→ Total files indexed: {total_files}")
+    print(f"→ Across {len(REPOS)} repositories")
+    print(f"→ Output saved to: {output_path}")
 
 if __name__ == "__main__":
     main()
