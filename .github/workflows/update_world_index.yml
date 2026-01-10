@@ -6,11 +6,11 @@ on:
     # Run daily at midnight UTC
     - cron: '0 0 * * *'
   workflow_dispatch:  # Allow manual trigger
-  push:
+  push: 
     branches: 
       - main
     paths:
-      - '.github/scripts/update_hopefulvision_world_index.py'
+      - '. github/scripts/update_hopefulvision_world_index.py'
       - '. github/workflows/update_world_index.yml'
 
 permissions:
@@ -21,12 +21,12 @@ jobs:
     runs-on: ubuntu-latest
     
     steps: 
-      - name: Checkout repository
+      - name:  Checkout repository
         uses: actions/checkout@v4
         
       - name: Set up Python
         uses: actions/setup-python@v5
-        with:
+        with: 
           python-version: '3.11'
           
       - name: Install dependencies
@@ -42,8 +42,8 @@ jobs:
           
       - name:  Commit and push if changed
         run: |
-          git config --local user.email "github-actions[bot]@users. noreply.github.com"
-          git config --local user. name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add HopefulVision_World_Index_AUTO.md
           
           # Check if there are changes to commit
