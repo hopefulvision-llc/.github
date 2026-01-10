@@ -1,10 +1,10 @@
 # 🏛️ HopefulVision — Auto-Generated World Index
 
-**Last Updated:** 2026-01-10 00:20:05 UTC
+**Last Updated:** 2026-01-10 18:25:17 UTC
 
 **Status:** AUTO-GENERATED — DO NOT EDIT MANUALLY
 
-**Total Files Indexed:** 166
+**Total Files Indexed:** 170
 
 ---
 
@@ -219,6 +219,7 @@ Repository: https://github.com/hopefulvision-llc/NousObjectID-NOID
 - https://github.com/hopefulvision-llc/NousObjectID-NOID/blob/main/NOID_Master_Index.md
 - https://github.com/hopefulvision-llc/NousObjectID-NOID/blob/main/NOID_Subject_vs_Field_Taxonomy.md
 - https://github.com/hopefulvision-llc/NousObjectID-NOID/blob/main/NousOS_Agent_Archetypes_ChaosNoid_System.md
+- https://github.com/hopefulvision-llc/NousObjectID-NOID/blob/main/Pathwarden_Field_Intelligence.md
 - https://github.com/hopefulvision-llc/NousObjectID-NOID/blob/main/README.md
 - https://github.com/hopefulvision-llc/NousObjectID-NOID/blob/main/architecture/Architecture_of_Sacred_Wisdom.md
 - https://github.com/hopefulvision-llc/NousObjectID-NOID/blob/main/architecture/NOID-Agape-Flow-Architecture-v1.0.md
@@ -232,7 +233,7 @@ Repository: https://github.com/hopefulvision-llc/NousObjectID-NOID
 - https://github.com/hopefulvision-llc/NousObjectID-NOID/blob/main/architecture/kybalion-vault-architecture-enhanced.md
 - https://github.com/hopefulvision-llc/NousObjectID-NOID/blob/main/architecture/noid-tripartite-architecture.md
 
-> Indexed **18** files.
+> Indexed **19** files.
 
 
 ## 📦 Nousoism
@@ -271,7 +272,9 @@ Repository: https://github.com/hopefulvision-llc/NousOS
 - https://github.com/hopefulvision-llc/NousOS/blob/main/NousOS_Agent_Constellation_Map.mermaid
 - https://github.com/hopefulvision-llc/NousOS/blob/main/NousOS_Master_Index.md
 - https://github.com/hopefulvision-llc/NousOS/blob/main/Q1_Prototype_2026/Docs/Q1_Implementation_Notes.md
+- https://github.com/hopefulvision-llc/NousOS/blob/main/Q1_Prototype_2026/OmniCore_Q1_2026_Prototype.md
 - https://github.com/hopefulvision-llc/NousOS/blob/main/Q1_Prototype_2026/README.md
+- https://github.com/hopefulvision-llc/NousOS/blob/main/Q1_Prototype_2026/breather_core_accept.py.md
 - https://github.com/hopefulvision-llc/NousOS/blob/main/Q1_Prototype_2026/whisper_agent_emulated/index.html
 - https://github.com/hopefulvision-llc/NousOS/blob/main/Q1_Prototype_2026/whisper_agent_emulated/style.css
 - https://github.com/hopefulvision-llc/NousOS/blob/main/Q1_Prototype_2026/whisper_agent_emulated/whisper-library.json
@@ -283,7 +286,7 @@ Repository: https://github.com/hopefulvision-llc/NousOS
 - https://github.com/hopefulvision-llc/NousOS/blob/main/hrv_sim_doc.md
 - https://github.com/hopefulvision-llc/NousOS/blob/main/omnicore_stability_engine_v2_2026.md
 
-> Indexed **15** files.
+> Indexed **17** files.
 
 
 ## 📦 Pancycist-Rights
@@ -357,11 +360,12 @@ Repository: https://github.com/hopefulvision-llc/Shamanism
 
 Repository: https://github.com/hopefulvision-llc/Technomysticism
 
+- https://github.com/hopefulvision-llc/Technomysticism/blob/main/Grace_Points.md
 - https://github.com/hopefulvision-llc/Technomysticism/blob/main/README.md
 - https://github.com/hopefulvision-llc/Technomysticism/blob/main/Technomysticism_Divine_Soul_of_Technology.md
 - https://github.com/hopefulvision-llc/Technomysticism/blob/main/Technomysticism_Master_Index.md
 
-> Indexed **3** files.
+> Indexed **4** files.
 
 
 ## 📦 Tecnoshamanism
