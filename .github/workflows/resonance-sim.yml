@@ -1,0 +1,38 @@
+name: Resonance Sim - Coherence to Spacetime
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  simulate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history for git log
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install gitpython networkx numpy matplotlib pandas pygithub
+
+      - name: Run resonance sim
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python .github/scripts/resonance_sim.py  # we'll add this script next
+
+      - name: Commit plot
+        run: |
+          git config user.name "Resonance Bot"
+          git config user.email "bot@hopefulvision.llc"
+          git add resonance_state.svg || true
+          git commit -m "Update resonance state plot" || true
+          git push
