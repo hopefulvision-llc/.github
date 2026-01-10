@@ -21,7 +21,7 @@ jobs:
       - name: Install deps
         run: |
           python -m pip install --upgrade pip
-          pip install gitpython networkx numpy matplotlib pandas pygithub
+          pip install gitpython networkx numpy matplotlib
 
       - name: Run resonance sim
         env:
