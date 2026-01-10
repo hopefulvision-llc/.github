@@ -11,7 +11,6 @@ from git import Repo
 import networkx as nx
 import numpy as np
 import matplotlib.pyplot as plt
-from markdown import markdown  # for basic link extraction if needed
 
 # Config thresholds (from your model)
 CHI_L = 0.3     # below → Lorentzian (red)
@@ -116,10 +115,6 @@ def main():
             chis = compute_chi(G)
             plot_resonance(G, chis)
             print(f"Done! Plot saved to {OUTPUT_SVG}")
-            # Git add & commit (Actions will push)
-            repo.index.add([OUTPUT_SVG])
-            repo.index.commit("Update resonance state visualization")
-            print("Committed plot.")
         else:
             print("Bare repo - skipping.")
     except Exception as e:
