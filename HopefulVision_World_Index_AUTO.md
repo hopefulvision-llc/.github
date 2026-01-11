@@ -1,10 +1,10 @@
 # 🏛️ HopefulVision — Auto-Generated World Index
 
-**Last Updated:** 2026-01-10 21:56:51 UTC
+**Last Updated:** 2026-01-11 01:10:47 UTC
 
 **Status:** AUTO-GENERATED — DO NOT EDIT MANUALLY
 
-**Total Files Indexed:** 172
+**Total Files Indexed:** 174
 
 ---
 
@@ -197,6 +197,16 @@ Repository: https://github.com/hopefulvision-llc/Hopeful-Party
 - https://github.com/hopefulvision-llc/Hopeful-Party/blob/main/nouscivics-voting-tool.md
 
 > Indexed **8** files.
+
+
+## 📦 HopefulVision-Website
+
+Repository: https://github.com/hopefulvision-llc/HopefulVision-Website
+
+- https://github.com/hopefulvision-llc/HopefulVision-Website/blob/main/README.md
+- https://github.com/hopefulvision-llc/HopefulVision-Website/blob/main/index.html
+
+> Indexed **2** files.
 
 
 ## 📦 Living-Intelligence
