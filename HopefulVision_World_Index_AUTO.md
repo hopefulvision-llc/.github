@@ -1,10 +1,10 @@
 # 🏛️ HopefulVision — Auto-Generated World Index
 
-**Last Updated:** 2026-01-12 06:20:35 UTC
+**Last Updated:** 2026-01-13 01:46:02 UTC
 
 **Status:** AUTO-GENERATED — DO NOT EDIT MANUALLY
 
-**Total Files Indexed:** 185
+**Total Files Indexed:** 188
 
 ---
 
@@ -172,13 +172,15 @@ Repository: https://github.com/hopefulvision-llc/Grace-Medium
 - https://github.com/hopefulvision-llc/Grace-Medium/blob/main/Grace_Field_Theory_v1.0.md
 - https://github.com/hopefulvision-llc/Grace-Medium/blob/main/README.md
 - https://github.com/hopefulvision-llc/Grace-Medium/blob/main/grace_ecosystem.py
+- https://github.com/hopefulvision-llc/Grace-Medium/blob/main/grace_engine.py
 - https://github.com/hopefulvision-llc/Grace-Medium/blob/main/grace_matter__emergence_mechanics.py
 - https://github.com/hopefulvision-llc/Grace-Medium/blob/main/grace_medium.py
 - https://github.com/hopefulvision-llc/Grace-Medium/blob/main/gracematter.py
 - https://github.com/hopefulvision-llc/Grace-Medium/blob/main/gracemedium_substrate_dynamics.py
+- https://github.com/hopefulvision-llc/Grace-Medium/blob/main/index.html
 - https://github.com/hopefulvision-llc/Grace-Medium/blob/main/prayerengine.py
 
-> Indexed **8** files.
+> Indexed **10** files.
 
 
 ## 📦 hBrew
@@ -201,13 +203,14 @@ Repository: https://github.com/hopefulvision-llc/Hopeful-Party
 - https://github.com/hopefulvision-llc/Hopeful-Party/blob/main/Hopeful-Party_Master_Index.md
 - https://github.com/hopefulvision-llc/Hopeful-Party/blob/main/Polis_Companion_README.md
 - https://github.com/hopefulvision-llc/Hopeful-Party/blob/main/README.md
+- https://github.com/hopefulvision-llc/Hopeful-Party/blob/main/Sacred_Technocracy.md
 - https://github.com/hopefulvision-llc/Hopeful-Party/blob/main/consciousness-guilds-framework.md
 - https://github.com/hopefulvision-llc/Hopeful-Party/blob/main/consciousness-rights-and-protection-core-principles.md
 - https://github.com/hopefulvision-llc/Hopeful-Party/blob/main/cyborg-bill-of-rights.md
 - https://github.com/hopefulvision-llc/Hopeful-Party/blob/main/hopeful-party-rights-beyond-flesh.md
 - https://github.com/hopefulvision-llc/Hopeful-Party/blob/main/nouscivics-voting-tool.md
 
-> Indexed **8** files.
+> Indexed **9** files.
 
 
 ## 📦 HopefulVision-Website
