@@ -1,10 +1,10 @@
 # 🏛️ HopefulVision — Auto-Generated World Index
 
-**Last Updated:** 2026-01-15 01:48:15 UTC
+**Last Updated:** 2026-01-15 19:16:33 UTC
 
 **Status:** AUTO-GENERATED — DO NOT EDIT MANUALLY
 
-**Total Files Indexed:** 188
+**Total Files Indexed:** 190
 
 ---
 
@@ -107,9 +107,11 @@ Repository: https://github.com/hopefulvision-llc/Company
 
 - https://github.com/hopefulvision-llc/Company/blob/main/Claude_proj_inst.Md
 - https://github.com/hopefulvision-llc/Company/blob/main/Company_Master_Index.md
+- https://github.com/hopefulvision-llc/Company/blob/main/Development-Journey.md
+- https://github.com/hopefulvision-llc/Company/blob/main/HopefulVision-Company-Overview.md
 - https://github.com/hopefulvision-llc/Company/blob/main/README.md
 
-> Indexed **3** files.
+> Indexed **5** files.
 
 
 ## 📦 Cosimos
