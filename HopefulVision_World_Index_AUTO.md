@@ -1,10 +1,10 @@
 # 🏛️ HopefulVision — Auto-Generated World Index
 
-**Last Updated:** 2026-01-15 19:16:33 UTC
+**Last Updated:** 2026-01-16 01:50:12 UTC
 
 **Status:** AUTO-GENERATED — DO NOT EDIT MANUALLY
 
-**Total Files Indexed:** 190
+**Total Files Indexed:** 191
 
 ---
 
@@ -54,9 +54,10 @@ Repository: https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day
 - https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/Docs/Testing-Guide.md
 - https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/Docs/Troubleshooting.md
 - https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/README.md
+- https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/coherence_score_equation_specification.md
 - https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/consciousness-demo.html
 
-> Indexed **13** files.
+> Indexed **14** files.
 
 
 ## 📦 Aeonism
