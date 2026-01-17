@@ -1,10 +1,10 @@
 # 🏛️ HopefulVision — Auto-Generated World Index
 
-**Last Updated:** 2026-01-16 01:50:12 UTC
+**Last Updated:** 2026-01-17 01:44:14 UTC
 
 **Status:** AUTO-GENERATED — DO NOT EDIT MANUALLY
 
-**Total Files Indexed:** 191
+**Total Files Indexed:** 192
 
 ---
 
@@ -297,6 +297,7 @@ Repository: https://github.com/hopefulvision-llc/NousoNET
 
 Repository: https://github.com/hopefulvision-llc/NousOS
 
+- https://github.com/hopefulvision-llc/NousOS/blob/main/CUBIT-AI-NousOS-Integration.md
 - https://github.com/hopefulvision-llc/NousOS/blob/main/NousOS_Agent_Constellation_Canonical_v1.md
 - https://github.com/hopefulvision-llc/NousOS/blob/main/NousOS_Agent_Constellation_Map.mermaid
 - https://github.com/hopefulvision-llc/NousOS/blob/main/NousOS_Master_Index.md
@@ -315,7 +316,7 @@ Repository: https://github.com/hopefulvision-llc/NousOS
 - https://github.com/hopefulvision-llc/NousOS/blob/main/hrv_sim_doc.md
 - https://github.com/hopefulvision-llc/NousOS/blob/main/omnicore_stability_engine_v2_2026.md
 
-> Indexed **17** files.
+> Indexed **18** files.
 
 
 ## 📦 Pancycist-Rights
