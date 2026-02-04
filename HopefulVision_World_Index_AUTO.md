@@ -1,10 +1,10 @@
 # 🏛️ HopefulVision — Auto-Generated World Index
 
-**Last Updated:** 2026-02-03 02:12:12 UTC
+**Last Updated:** 2026-02-04 02:07:33 UTC
 
 **Status:** AUTO-GENERATED — DO NOT EDIT MANUALLY
 
-**Total Files Indexed:** 256
+**Total Files Indexed:** 257
 
 ---
 
@@ -51,13 +51,14 @@ Repository: https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day
 - https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/Docs/Q1-2026-Demo-Build-Plan.md
 - https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/Docs/Q1-2026-Technical-Spec.md
 - https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/Docs/Q2-Q4-Roadmap.md
+- https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/Docs/README.md
 - https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/Docs/Testing-Guide.md
 - https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/Docs/Troubleshooting.md
-- https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/README.md
 - https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/coherence_score_equation_specification.md
-- https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/consciousness-demo.html
+- https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/index.html
+- https://github.com/hopefulvision-llc/2026-Demonstration-Earth-Day/blob/main/src/index.html
 
-> Indexed **14** files.
+> Indexed **15** files.
 
 
 ## 📦 Aeonism
