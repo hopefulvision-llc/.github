@@ -1,0 +1,79 @@
+name: Log Commit to YAML
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  log-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    # Skip if commit message contains [skip ci] to avoid logging the workflow's own commits
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Install yq (YAML processor)
+        run: |
+          YQ_VERSION="v4.40.5"
+          YQ_BINARY="yq_linux_amd64"
+          wget -qO /usr/local/bin/yq "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/${YQ_BINARY}"
+          echo "0d6aaf1cf44a8d18fbc7ed0ef14f735a8df8d2e314c4cc0f0242d35c0a440c95  /usr/local/bin/yq" | sha256sum -c -
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Append commit to commit-log.yaml
+        run: |
+          # Get commit information
+          COMMIT_SHA="${{ github.sha }}"
+          COMMIT_MESSAGE=$(git log -1 --format=%s $COMMIT_SHA)
+          AUTHOR="${{ github.actor }}"
+          TIMESTAMP="${{ github.event.head_commit.timestamp }}"
+          REPO="${{ github.repository }}"
+          
+          # Create a JSON file with the new commit entry
+          cat > /tmp/new-commit.json << 'EOF'
+          {
+            "sha": "",
+            "message": "",
+            "author": "",
+            "timestamp": "",
+            "repository": "",
+            "branch": "main"
+          }
+          EOF
+          
+          # Use jq to populate the JSON with actual values (safer than shell variable expansion)
+          jq -n \
+            --arg sha "$COMMIT_SHA" \
+            --arg message "$COMMIT_MESSAGE" \
+            --arg author "$AUTHOR" \
+            --arg timestamp "$TIMESTAMP" \
+            --arg repo "$REPO" \
+            '{sha: $sha, message: $message, author: $author, timestamp: $timestamp, repository: $repo, branch: "main"}' \
+            > /tmp/new-commit.json
+          
+          # Convert JSON to YAML and append to commit-log.yaml
+          yq eval ".commits += [$(yq eval -o=json /tmp/new-commit.json)]" -i commit-log.yaml
+
+      - name: Commit and push changes
+        run: |
+          git add commit-log.yaml
+          
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update commit log [skip ci]"
+            git push
+          fi
