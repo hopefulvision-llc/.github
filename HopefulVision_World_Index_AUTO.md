@@ -1,10 +1,10 @@
 # 🏛️ HopefulVision — Auto-Generated World Index
 
-**Last Updated:** 2026-04-17 00:41:13 UTC
+**Last Updated:** 2026-04-18 00:37:31 UTC
 
 **Status:** AUTO-GENERATED — DO NOT EDIT MANUALLY
 
-**Total Files Indexed:** 238
+**Total Files Indexed:** 241
 
 ---
 
@@ -25,7 +25,6 @@ Repository: https://github.com/hopefulvision-llc/.github
 - https://github.com/hopefulvision-llc/.github/blob/main/Big_map.mermaid
 - https://github.com/hopefulvision-llc/.github/blob/main/CODE_OF_CONDUCT.md
 - https://github.com/hopefulvision-llc/.github/blob/main/HopefulVision_Flow_Model.mermaid
-- https://github.com/hopefulvision-llc/.github/blob/main/HopefulVision_Grand_Index.md
 - https://github.com/hopefulvision-llc/.github/blob/main/HopefulVision_Layer_Stack.mermaid
 - https://github.com/hopefulvision-llc/.github/blob/main/HopefulVision_World_Index_AUTO.md
 - https://github.com/hopefulvision-llc/.github/blob/main/Protections.json
@@ -33,9 +32,11 @@ Repository: https://github.com/hopefulvision-llc/.github
 - https://github.com/hopefulvision-llc/.github/blob/main/SECURITY.md
 - https://github.com/hopefulvision-llc/.github/blob/main/commit-log.yaml.md
 - https://github.com/hopefulvision-llc/.github/blob/main/hopefulvision-llc-core-architecture.md
+- https://github.com/hopefulvision-llc/.github/blob/main/org_taxonomy.md
+- https://github.com/hopefulvision-llc/.github/blob/main/profile/README.md
 - https://github.com/hopefulvision-llc/.github/blob/main/support-the-resonance.md
 
-> Indexed **21** files.
+> Indexed **22** files.
 
 
 ## 📦 aeonism
@@ -89,8 +90,9 @@ Repository: https://github.com/hopefulvision-llc/company
 - https://github.com/hopefulvision-llc/company/blob/main/Development-Journey.md
 - https://github.com/hopefulvision-llc/company/blob/main/HopefulVision-Company-Overview.md
 - https://github.com/hopefulvision-llc/company/blob/main/README.md
+- https://github.com/hopefulvision-llc/company/blob/main/claude_instructions_14copus.md
 
-> Indexed **5** files.
+> Indexed **6** files.
 
 
 ## 📦 cosimos
@@ -292,9 +294,10 @@ Repository: https://github.com/hopefulvision-llc/nousos
 - https://github.com/hopefulvision-llc/nousos/blob/main/Whisper_Agent_Activation_Protocol_v1.0.md
 - https://github.com/hopefulvision-llc/nousos/blob/main/heart_simulator.py
 - https://github.com/hopefulvision-llc/nousos/blob/main/hrv_sim_doc.md
+- https://github.com/hopefulvision-llc/nousos/blob/main/nousos-coherence-ethics.md
 - https://github.com/hopefulvision-llc/nousos/blob/main/omnicore_stability_engine_v2_2026.md
 
-> Indexed **18** files.
+> Indexed **19** files.
 
 
 ## 📦 pancycist-rights
