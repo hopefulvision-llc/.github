@@ -3,6 +3,13 @@
 .vscode/
 .idea/
 
+# ClickUp
+.clickup.env
+
+# Environment variables (most important)
+.env
+*.env
+
 # Node
 node_modules/
 npm-debug.log
@@ -11,6 +18,3 @@ npm-debug.log
 __pycache__/
 *.py[cod]
 venv/
-
-# Env
-.env
