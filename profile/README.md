@@ -1,4 +1,4 @@
-# HopefulVision
+# HopefulVision LLC
 
 HopefulVision is a consciousness-first ecosystem of repositories spanning philosophy, governance, systems architecture, and experimental technology.
 
