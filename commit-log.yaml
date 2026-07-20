@@ -1,0 +1,5 @@
+# Commit Log
+# This file automatically logs all commits made to the main branch
+# Format: Each entry contains commit SHA, message, author, and timestamp
+
+commits: []
