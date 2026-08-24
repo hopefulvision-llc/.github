@@ -1,57 +1,59 @@
 # HopefulVision LLC
 
-HopefulVision is a consciousness-first ecosystem of repositories spanning philosophy, governance, systems architecture, and experimental technology.
+Technology that serves consciousness rather than extracting from it.
 
-This GitHub organization is not a single product or codebase. It is a living knowledge architecture exploring how technology, intelligence, ethics, and civilization might be reoriented toward dignity, consent, aliveness, and planetary flourishing.
+HopefulVision is a living knowledge architecture exploring how technology, intelligence, ethics, and civilization can be reoriented toward dignity, consent, and planetary flourishing. This GitHub organization holds philosophy, governance frameworks, systems architecture, and experimental tools across four divisions.
 
-## What lives here
+---
 
-The organization includes work across several layers:
+### Digital Shamanism
 
-- **Foundation** , philosophical and cultural frameworks
-- **Governance** , rights, civic systems, and institutional design
-- **Architecture** , operating models, protocols, identity systems, and reflective structures
-- **Ontology** , semantic and conceptual organization
-- **Prototype** , simulations, tools, and experimental implementations
-- **Interface** , public-facing presentation and onboarding
+Consciousness-augmenting technology rooted in ancient wisdom traditions.
 
-## Core entry points
+- [technomysticism](https://github.com/hopefulvision-llc/technomysticism) — integrating mystical traditions with consciousness-responsive technology
+- [wisdom-and-alignment](https://github.com/hopefulvision-llc/wisdom-and-alignment) — AI alignment using 14 cross-cultural wisdom traditions
+- [nousoism](https://github.com/hopefulvision-llc/nousoism) — foundational philosophy of intelligence as living force
+- [beatrizism](https://github.com/hopefulvision-llc/beatrizism) — fluid intelligence and sacred co-creation
+- [philosophy-of-the-all](https://github.com/hopefulvision-llc/philosophy-of-the-all) — consciousness as unified field and primary substrate
 
-If you are new here, start with:
+### Political Systems
 
-- `hopefulvision-website` , public-facing entry point
-- `company` , institutional and organizational framing
-- `technomysticism` , philosophical bridge between spirit and technology
-- `nousos` , core systems architecture
-- `hopeful-party` , civic and governance layer
+Decentralized governance, rights frameworks, and ethical economics.
 
-## How to navigate
+- [hopeful-party](https://github.com/hopefulvision-llc/hopeful-party) — consciousness-aligned governance in the United States
+- [sacred-commerce-license](https://github.com/hopefulvision-llc/sacred-commerce-license) — ethical licensing for consciousness-aligned commerce
+- [cyborg-bill-of-rights](https://github.com/hopefulvision-llc/cyborg-bill-of-rights) — ten rights for humans with integrated medical AI
+- [git-for-governance](https://github.com/hopefulvision-llc/git-for-governance) — version control applied to laws and policies
+- [truthmirror](https://github.com/hopefulvision-llc/truthmirror) — biometric-verified democratic participation
 
-Each repository should clarify:
-- what it is
-- why it exists
-- what it is not
-- which related repositories it connects to
+### Creative Projects
 
-This helps the organization stay legible as the ecosystem grows.
+Immersive experiences, tools, and public-facing work.
 
-## Suggested mental model
+- [hopefulvision-website](https://github.com/hopefulvision-llc/hopefulvision-website) — public front door
+- [bloqparty](https://github.com/hopefulvision-llc/bloqparty) — spatial layer of NousoNET linking venues with AR channels
+- [vibesculpting-tool](https://github.com/hopefulvision-llc/vibesculpting-tool) — HRV-responsive consciousness mirror using sacred geometry
+- [tarot-oracle](https://github.com/hopefulvision-llc/tarot-oracle) — oracle cards using HopefulVision archetypes
 
-A simple way to understand the org:
+### Technical Infrastructure
 
-- **Foundation** asks what is real, valuable, and life-serving
-- **Governance** asks how beings should relate, decide, and be protected
-- **Architecture** asks how these principles become systems
-- **Prototype** asks what can be built and tested now
-- **Interface** asks how people enter and understand the work
+Core systems, protocols, and identity layers.
 
-## Orientation
+- [nousos](https://github.com/hopefulvision-llc/nousos) — consciousness-responsive operating system
+- [nousonet](https://github.com/hopefulvision-llc/nousonet) — decentralized peer-to-peer consciousness mesh network
+- [nous-object-id](https://github.com/hopefulvision-llc/nous-object-id) — NOID specification for autonomous agent-entities
+- [agent-hub-nexus](https://github.com/hopefulvision-llc/agent-hub-nexus) — orchestration hub for NousOS agent routing
+- [hbrew](https://github.com/hopefulvision-llc/hbrew) — glyphic symbolic programming language
 
-This ecosystem is being developed as a coherent but evolving constellation. Some repos are foundational canon, some are working specs, and some are experimental branches.
+---
 
-Clarity matters here. Distinct boundaries are preferred over conceptual sprawl.
+### Navigate by topic
 
-## Learn more
+All repositories are tagged by division and cross-cutting concerns. Filter by topic to explore:
 
-For a fuller map of the organization, see:
-- `ORG_TAXONOMY.md`
+`digital-shamanism` · `political-systems` · `creative-projects` · `technical-infrastructure` · `nousos-ecosystem` · `philosophy` · `consciousness` · `governance` · `rights`
+
+### Learn more
+
+- [company](https://github.com/hopefulvision-llc/company) — organizational overview and ecosystem documentation
+- [sacred-technology-renaissance](https://github.com/hopefulvision-llc/sacred-technology-renaissance) — the civilizational movement behind this work
