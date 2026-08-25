@@ -1,10 +1,10 @@
 # 🏛️ HopefulVision — Auto-Generated World Index
 
-**Last Updated:** 2026-08-24 01:17:14 UTC
+**Last Updated:** 2026-08-25 01:15:29 UTC
 
 **Status:** AUTO-GENERATED — DO NOT EDIT MANUALLY
 
-**Total Files Indexed:** 251
+**Total Files Indexed:** 242
 
 ---
 
@@ -81,29 +81,6 @@ Repository: https://github.com/hopefulvision-llc/bloqparty
 > Indexed **2** files.
 
 
-## 📦 community-and-outreach
-
-Repository: https://github.com/hopefulvision-llc/community-and-outreach
-
-- https://github.com/hopefulvision-llc/community-and-outreach/blob/main/README.md
-
-> Indexed **1** files.
-
-
-## 📦 company
-
-Repository: https://github.com/hopefulvision-llc/company
-
-- https://github.com/hopefulvision-llc/company/blob/main/Claude_proj_inst.Md
-- https://github.com/hopefulvision-llc/company/blob/main/Company_Master_Index.md
-- https://github.com/hopefulvision-llc/company/blob/main/Development-Journey.md
-- https://github.com/hopefulvision-llc/company/blob/main/HopefulVision-Company-Overview.md
-- https://github.com/hopefulvision-llc/company/blob/main/README.md
-- https://github.com/hopefulvision-llc/company/blob/main/claude_instructions_14copus.md
-
-> Indexed **6** files.
-
-
 ## 📦 cosimos
 
 Repository: https://github.com/hopefulvision-llc/cosimos
@@ -155,15 +132,6 @@ Repository: https://github.com/hopefulvision-llc/git-for-governance
 - https://github.com/hopefulvision-llc/git-for-governance/blob/main/README.md
 
 > Indexed **2** files.
-
-
-## 📦 governance-and-economics
-
-Repository: https://github.com/hopefulvision-llc/governance-and-economics
-
-- https://github.com/hopefulvision-llc/governance-and-economics/blob/main/README.md
-
-> Indexed **1** files.
 
 
 ## 📦 grace-medium
@@ -349,15 +317,6 @@ Repository: https://github.com/hopefulvision-llc/quantum-nous
 - https://github.com/hopefulvision-llc/quantum-nous/blob/main/Vision_Q2_Quantum_Nous_Architecture.md.md
 
 > Indexed **4** files.
-
-
-## 📦 reality-interface
-
-Repository: https://github.com/hopefulvision-llc/reality-interface
-
-- https://github.com/hopefulvision-llc/reality-interface/blob/main/README.md
-
-> Indexed **1** files.
 
 
 ## 📦 sacred-commerce-license
